@@ -25,7 +25,7 @@ const UserProfileUpdate = () => {
             const config = {
                 withCredentials: true,
               };
-          const response = await axios.put(`http://${deployedIp}:4000/user/updateProfile`,
+          const response = await axios.put(`${deployedIp}/user/updateProfile`,
           {
             name,
             email,imageUrl

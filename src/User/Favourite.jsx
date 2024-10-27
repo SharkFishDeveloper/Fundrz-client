@@ -17,7 +17,7 @@ const Favourite = () => {
                 withCredentials: true,
               };
             
-            const answer = await axios.get(`http://${deployedIp}:4000/user/favourites`,config);
+            const answer = await axios.get(`${deployedIp}/user/favourites`,config);
             setCampInfo(answer.data.message);
            } catch (error) {
             console.log("error fav",error);

@@ -38,7 +38,7 @@ const CreateCampaignDone = () => {
             };
             
             console.log("request data",requestData);
-            const response = await axios.post(`http://${deployedIp}:4000/campaign/create-campaign`,{
+            const response = await axios.post(`${deployedIp}/campaign/create-campaign`,{
                 requestData
             },config);
 

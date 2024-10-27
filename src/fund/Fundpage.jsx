@@ -31,7 +31,7 @@ const Fundpage = () => {
                 return alert("Cannot donate less");
               }
 
-            const answer = await axios.put(`http://${deployedIp}:4000/campaign/fund`,{
+            const answer = await axios.put(`${deployedIp}/campaign/fund`,{
                 campaignId,
                 fundAmount:parseInt(funds, 10),
                 name

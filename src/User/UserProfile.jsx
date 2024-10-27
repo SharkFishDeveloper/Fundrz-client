@@ -20,7 +20,7 @@ const UserProfile = () => {
             const config = {
                 withCredentials: true,
               };
-            const response = await axios.get(`http://${deployedIp}:4000/user/profile`,config);
+            const response = await axios.get(`${deployedIp}/user/profile`,config);
             setUser(response.data.message);
             console.log("userprofile",response.data.message);
           } catch (error) {
@@ -36,7 +36,7 @@ const UserProfile = () => {
             const config = {
                 withCredentials: true,
               };
-            const answer = await axios.get(`http://${deployedIp}:4000/campaign/details/
+            const answer = await axios.get(`${deployedIp}/campaign/details/
             ${campaignId}`,config);
               console.log("frontedn fethcning favourite",answer.data);
               navigate("/campaign/view", { state: { singledatacampaign: answer.data.campaigns } });

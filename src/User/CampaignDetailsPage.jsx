@@ -41,7 +41,7 @@ const CampaignDetailsPage = () => {
                 withCredentials: true,
               };
               
-            const answer = await axios.put(`http://${deployedIp}:4000/campaign/edit/comment`,
+            const answer = await axios.put(`${deployedIp}/campaign/edit/comment`,
             {textAreaComment,campaignId:singledatacampaign._id},
             config);
 
