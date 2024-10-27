@@ -17,7 +17,7 @@ const Campaigns = () => {
               withCredentials: true,
             };
             
-        const response = await axios.get(`http://${deployedIp}:4000/campaign/details`,config);
+        const response = await axios.get(`https://${deployedIp}:4000/campaign/details`,config);
         console.log("on campaign page",response.data.message);
         setCampaignDetails(response.data);
         }

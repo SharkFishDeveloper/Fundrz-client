@@ -23,7 +23,7 @@ const SearchPage = () => {
             const config = {
                 withCredentials: true,
               };
-          const response = await axios.get(`http://${deployedIp}:4000/campaign/search?searchTerm=${searchTerm}`,config);
+          const response = await axios.get(`https://${deployedIp}:4000/campaign/search?searchTerm=${searchTerm}`,config);
           if(response.data.data.length === 0){
             setNoResult(true);
             setLoading(false);

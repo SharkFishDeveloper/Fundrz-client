@@ -26,7 +26,7 @@ const SignUP = () => {
       withCredentials: true,
     };
     try {
-      const answer = await axios.post(`http://${deployedIp}:4000/registration/signup`,{
+      const answer = await axios.post(`https://${deployedIp}:4000/registration/signup`,{
       email,
       name,
       password,

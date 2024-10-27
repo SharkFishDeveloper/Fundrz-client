@@ -30,7 +30,7 @@ export default function Header() {
           withCredentials: true,
         };
         console.log("before loading user");
-        const response = await axios.get(`http://${deployedIp}:4000/user/details`,config);
+        const response = await axios.get(`https://${deployedIp}:4000/user/details`,config);
         
         // if(response.data.message==="foundUser"){
         //   console.log("In if condition");
@@ -58,7 +58,7 @@ export default function Header() {
       withCredentials: true,
     };
     try {
-      const response = await axios.get(`http://${deployedIp}:4000/registration/logout`,config);
+      const response = await axios.get(`https://${deployedIp}:4000/registration/logout`,config);
       console.log(response.data.message);
       setuserInfo(null);
       alert(response.data.message);
@@ -74,7 +74,7 @@ export default function Header() {
       withCredentials: true,
     };
     try {
-      const response = await axios.get(`http://${deployedIp}:4000/campaign/history`,config);
+      const response = await axios.get(`https://${deployedIp}:4000/campaign/history`,config);
       console.log(response.data.history);
       const hist = response.data.history;
       navigate("/history",{state:{history:hist}});
@@ -119,7 +119,7 @@ export default function Header() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-10 w-auto" size={30}
-                    src="https://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png"
+                    src="httpss://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png"
                     alt="Your Company" 
                   />
                 </div>
@@ -169,7 +169,7 @@ export default function Header() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://icons.iconarchive.com/icons/dtafalonso/android-l/512/Settings-L-icon.png"
+                        src="httpss://icons.iconarchive.com/icons/dtafalonso/android-l/512/Settings-L-icon.png"
                         alt=""
                       />
                     </Menu.Button>

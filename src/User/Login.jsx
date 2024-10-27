@@ -17,7 +17,7 @@ const Login = () => {
     };
 
     try {
-      const answer = await axios.post(`http://${deployedIp}:4000/registration/login`,{
+      const answer = await axios.post(`https://${deployedIp}:4000/registration/login`,{
       email,
       password
     },config);

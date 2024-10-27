@@ -12,7 +12,7 @@ const FavouriteCampInfo = ({ campaign }) => {
             const config = {
                 withCredentials: true,
               };
-            const answer = await axios.get(`http://${deployedIp}:4000/campaign/details/
+            const answer = await axios.get(`https://${deployedIp}:4000/campaign/details/
             ${campaign._id}`,config);
               console.log("frontedn fethcning favourite",answer.data);
               navigate("/campaign/view", { state: { singledatacampaign: answer.data.campaigns } });
