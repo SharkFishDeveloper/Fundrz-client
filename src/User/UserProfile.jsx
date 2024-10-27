@@ -38,7 +38,6 @@ const UserProfile = () => {
               };
             const answer = await axios.get(`${deployedIp}/campaign/details/
             ${campaignId}`,config);
-              console.log("frontedn fethcning favourite",answer.data);
               navigate("/campaign/view", { state: { singledatacampaign: answer.data.campaigns } });
               //console.log("reading",answer.data.campaigns);
         } catch (error) {
@@ -48,11 +47,9 @@ const UserProfile = () => {
     }
 
     const handleEditProfile = ()=>{
-      console.log("edit user profile");
       navigate("update", { state: { createdCamaigns: user.createdCampaigns } });
     }
 
-    console.log("user",user);
     return (
         <>
           {userInfo === "foundUser" ? (

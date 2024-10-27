@@ -169,7 +169,7 @@ export default function Header() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="httpss://icons.iconarchive.com/icons/dtafalonso/android-l/512/Settings-L-icon.png"
+                        src="https://icons.iconarchive.com/icons/dtafalonso/android-l/512/Settings-L-icon.png"
                         alt=""
                       />
                     </Menu.Button>
