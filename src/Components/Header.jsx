@@ -119,7 +119,7 @@ export default function Header() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-10 w-auto" size={30}
-                    src="httpss://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png"
+                    src="https://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png"
                     alt="Your Company" 
                   />
                 </div>

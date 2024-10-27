@@ -1,3 +1,3 @@
-const deployedIp = `fundrz-server.onrender.com`;
+const deployedIp = `https://fundrz-server.onrender.com`;
 
 export default deployedIp;
