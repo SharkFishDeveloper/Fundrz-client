@@ -21,7 +21,7 @@ const Home = () => {
         <div className="max-w-x bg-white p-8 rounded-md shadow-md mb-6 flex items-center p-3">
           <img
             className="mr-20 rounded-lg shadow-lg"
-            src="https://img.freepik.com/premium-photo/world-environment-earth-day-concept-with-globe-nature-eco-friendly-environment-ai-generated_342644-1058.jpg"
+            src="httpss://img.freepik.com/premium-photo/world-environment-earth-day-concept-with-globe-nature-eco-friendly-environment-ai-generated_342644-1058.jpg"
             alt="FunRaiser Campaign"
           />
           
