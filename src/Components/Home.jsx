@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -7,8 +6,8 @@ const Home = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Navigation Bar */}
       <nav className="bg-blue-600 text-white py-4 shadow-lg">
-        <div className="container  flex justify-between items-center ml-1.5">
-          <Link to="/" className="text-2xl font-bold ">FunRaiser</Link>
+        <div className="container flex justify-between items-center mx-auto">
+          <Link to="/" className="text-2xl font-bold ml-1">FunRaiser</Link>
           <div>
             <Link to="/campaigns" className="mx-2 hover:text-blue-300">Campaigns</Link>
             <Link to="/create-campaign" className="mx-2 hover:text-blue-300">Create Campaign</Link>
@@ -21,7 +20,7 @@ const Home = () => {
         {/* Website Name and Other Messages */}
         <div className="text-center mb-4">
           <h1 className="text-5xl font-extrabold text-blue-600 mb-2">Fund-Raiser</h1>
-          <p className="text-gray-700 text-lg">Your go-to platform for creating and supporting exciting fundraising campaigns.</p>
+          <p className="text-gray-700 text-lg">Your platform for exciting fundraising campaigns.</p>
         </div>
 
         {/* Image and Introduction */}
@@ -34,10 +33,7 @@ const Home = () => {
           <div className="md:w-1/2">
             <p className="text-gray-800 font-bold text-3xl mb-4">Welcome to FunRaiser!</p>
             <p className="text-gray-600">
-              Join us in making a difference. FunRaiser is your go-to platform for creating and supporting exciting fundraising campaigns. Explore our services and discover how you can make a difference in the causes you care about.
-              Whether you're an individual passionate about making a difference or a nonprofit organization seeking support, FunRaiser provides the tools and community you need to achieve your fundraising goals.
-              With a user-friendly interface, creating a campaign on FunRaiser is a breeze. Tell your story, set fundraising goals, and engage with your supporters. Launching a campaign has never been this accessible.
-              Discover a world of meaningful causes and be a part of positive change. Browse and support campaigns aligned with your values. From medical expenses to community projects, every contribution counts.
+              Join us to make a difference. FunRaiser is your platform for creating and supporting impactful fundraising campaigns. Whether you're an individual or a nonprofit, we provide the tools to achieve your goals.
             </p>
           </div>
         </div>
@@ -61,7 +57,7 @@ const Home = () => {
             <span className="text-5xl mr-4">🚀</span>
             <div>
               <h2 className="text-xl font-bold">Start a Campaign</h2>
-              <p>Launch your own fundraising campaign and make an impact.</p>
+              <p>Launch your fundraising campaign and make an impact.</p>
             </div>
           </div>
 
