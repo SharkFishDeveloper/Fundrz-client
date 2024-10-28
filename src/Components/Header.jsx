@@ -118,7 +118,7 @@ export default function Header() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-10 w-auto" size={30}
+                    className="h-10 w-auto hidden sm:block"
                     src="https://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png"
                     alt="Your Company" 
                   />
