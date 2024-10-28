@@ -7,8 +7,8 @@ const Home = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Navigation Bar */}
       <nav className="bg-blue-600 text-white py-4 shadow-lg">
-        <div className="container mx-auto flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold">FunRaiser</Link>
+        <div className="container  flex justify-between items-center ml-1.5">
+          <Link to="/" className="text-2xl font-bold ">FunRaiser</Link>
           <div>
             <Link to="/campaigns" className="mx-2 hover:text-blue-300">Campaigns</Link>
             <Link to="/create-campaign" className="mx-2 hover:text-blue-300">Create Campaign</Link>
